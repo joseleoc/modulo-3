@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Módulo 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="container">
+      <h1>Saludo Interactivo</h1>
+      <form onsubmit="return onGreet();">
+        <input type="text" name="name" placeholder="Ingresa tu Nombre" id="name" maxlength="64" minlength="0" />
+        <div>
+          <button type="button" id="greet">Saludar</button>
+          <button type="button" id="reset" class="hidden">Reiniciar</button>
+        </div>
+      </form>
+
+      <section class="hidden" id="result">
+        <p id="greeting"></p>
+        <span id="characterCount"></span>
+      </section>
+    </article>
+  </body>
+
+  <script src="modulo-3.js"></script>
+</html>
